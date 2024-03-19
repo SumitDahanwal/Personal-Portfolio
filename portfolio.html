@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/d45175f8fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>I'm <span>Sumit Kumar</span><br> </h1>
+            </div>
+        </div>
+     </div>
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Sumit.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="Born">
+                        Born in 1998, Raised in small town in Haryana, been hard at work since 2022.
+                        I'm Sumit, multi-disciplinary creative from Gurgaon, currently I'm Fresher Looking for Job.
+                        
+                        Proficient in Design, Interactive Design, developing layout using HTML. I'm Pursuing my Bachaelor of Technology from gurgaon.
+                        
+                        I enjoy a good cup of coffee, watching good movies & Web Series, playing badminton, Daily workout.
+                        <br>
+                        <br>
+                        <br>
+
+                        Always Create.
+                        <br>
+                        Art. Food, Whatever. Enjoy the beauty of it.
+
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Proficient</span><br>HTML</li>
+                            <li><span>Proficient</span><br>CSS</li>
+                            <li><span>Intermediate</span><br>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br>Fresher</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Global Institute of Technology and Management</span><br>Bachaelor in Technology</li>
+                            <li><span>DPG Polytechnic</span><br>Diploma In CSE</li>
+                            <li><span>BOSSE</span><br>12th</li>
+                            <li><span>Sunglow Internation School</span><br>Matriculation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-------------Services tag----------------->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end development</h2>
+                    <p>“Front-end development focuses on how a website or app appears to users and their experience using it.
+                        This involves a variety of details that affect the appearance of a site, such as the placement of buttons, links, 
+                        and other interactive elements; the size, color, and font schemes for banners,
+                        text, and other visual features; placement of images and videos,
+                        including those that advertise the company's assets, such as products, services</p>
+                        <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Website Maintenance</h2>
+                    <p>You already have a website, and you think it is all that you need. Wrong. Your customers would not want to stay on a stale homepage.
+                        So, you have to keep your website fresh, trendy, and updated.
+                        To keep the site up to date, organizations sign up for website maintenance services.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Responsive Website
+                    </h2>
+                    <p>A responsive website is a website that adapts to the screen of the device used to view it. This means that the website will look good on desktop computers, laptops, tablets, and smartphones.
+                        Responsive websites are important because more and more people are using mobile devices to access the internet.</p>
+                        <a href="#">learn more</a>
+                </div>
+                
+
+            </div>
+        </div>
+     </div>
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me </h1>
+                    <br>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        Sk392360@gmail.com</p>
+                        <br>
+                        <br>
+                    <p> <i class="fa-solid fa-phone"></i> 8287719113</p>
+                    <br>
+                    <br>
+                    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/SumitDahanwal">Github</a></p>
+                    <br>
+                    <br>
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/sumit-kumar-5a822a249/">Linkedin</a></p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class=" btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+     </script>
+</body>
+</html>
